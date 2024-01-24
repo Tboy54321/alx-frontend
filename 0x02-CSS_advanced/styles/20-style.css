@@ -109,6 +109,12 @@ ul {
     padding: 0.5rem;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both; /* or clear: left/right; based on your layout */
+}
+
 .navbar-menu {
     float: right;
 }
@@ -198,9 +204,3 @@ ul {
 .footer ul {
     text-align: right;
 }
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both; /* or clear: left/right; based on your layout */
-  }
